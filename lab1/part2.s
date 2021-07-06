@@ -2,7 +2,7 @@
 .text
 .global start
 start:
-LDR R4, [PC, #84] // R4 points to result location
+LDR R4, =RESULT // R4 points to result location
 LDR R2, [R4, #4] // R2 holds the number of elements in the list
 ADD R3, R4, #8 // R3 points to the first number
 LDR R0, [R3] // R0 holds the largest number so far
