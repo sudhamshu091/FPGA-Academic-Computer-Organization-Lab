@@ -1,26 +1,30 @@
+/* Program that finds the largest number in a list of integers */
+
 			.text
 			.global _start
 
 _start:
-			LDR R4, =RESULT		// R4 points to the result location
-			LDR R2, [R4, #4]	// R2 holds the number of elements in the list
-			ADD R3, R4, #8		// R3 poins to the first number
-			LDR R0, [R3]		// R0 holds the first number in the list
+			LDR R8, =RESULT		// R8 points to the result location
+			LDR R4, [R8, #4]	// R4 is a counter, initialize it with N
+			ADD R5, R8, #8		// R5 poins to the first number
+			LDR R2, [R5]		// R2 holds the largest number found so far
 
-LOOP:		SUBS R2, R2, #1		// decrement the loop counter
-			BEQ DONE			// end loop if counter has reached 0
-			ADD R3, R3, #4		// R3 points to next number in the list
-			LDR R1, [R3]		// R1 holds the next number in the list
-			CMP R0, R1			// check if it is greater than the maximum
-			BGE LOOP			// if no, branch back to the loop
-			MOV R0, R1			// if yes, update the curent max
-			B LOOP				// branch back to the loop
+LOOP:			SUBS R4, R4, #1		// decrement the counter
+			BEQ DONE		// finished if R4 is equal to 0
+			ADD R5, R5, #4		// increment the list pointer
+			LDR R6, [R5]		// get the next number
+			CMP R2, R6		// check if larger number found
+			BGE LOOP			
+			MOV R0, R1		// update the largest number found
+			B LOOP				
 
-DONE:		STR R0, [R4]		// store the result to the memory location
+DONE:		STR R2, [R8]			// store the largest number into RESULT
 
-END:		B END				// infinite loop!
+STOP:		B STOP				// remail here when done
 
-RESULT:		.word	0			// memory assigned for result location
-N:			.word	7			// number of enties in the lis
-NUMBERS:	.word	4, 5, 3, 6	//the list data
-			.word	1, 8, 2
+RESULT:		.skip	4			// space for largest number found
+N:		.word	7			// number of entries in the list
+NUMBERS:	.word	4, 5, 3, 6		// numbers in the list ...
+		.word	1, 8, 2  	   	// ...
+			
+		.end
