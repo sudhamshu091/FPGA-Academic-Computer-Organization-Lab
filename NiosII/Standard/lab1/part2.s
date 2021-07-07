@@ -24,7 +24,7 @@ RESULT:           .skip 4              // space for the largest number found
 N:                .word 7              // number of entries in the list
 
 NUMBERS:          .word 4, 5, 3, 6     // numbers in the list . . .
-                  .word 1, 8, 2 # . . .
+                  .word 1, 8, 2        // . . .
                   .end
 	
 	
