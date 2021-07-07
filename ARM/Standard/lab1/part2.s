@@ -14,7 +14,7 @@ LOOP:			SUBS R4, R4, #1		// decrement the counter
 			LDR R6, [R5]		// get the next number
 			CMP R2, R6		// check if larger number found
 			BGE LOOP			
-			MOV R0, R1		// update the largest number found
+			MOV R2, R6		// update the largest number found
 			B LOOP				
 
 DONE:		STR R2, [R8]			// store the largest number into RESULT
