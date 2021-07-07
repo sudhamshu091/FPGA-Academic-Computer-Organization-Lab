@@ -1,5 +1,4 @@
 /* Program that finds the largest number in a list of integers */
-
 			.text
 			.global _start
 
