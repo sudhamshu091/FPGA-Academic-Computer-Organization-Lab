@@ -9,6 +9,9 @@ helloworld:[Program](ARM/Basic/helloworld.c)
 
 Lab1 Part2: [Program](ARM/Solutions/lab1/part2.s)
 ![Lab1 Part2](ARM/Solutions/lab1/part2.jpg)
+![helloworld](ARM/Solutions/1.jpg)
+![helloworld](ARM/Solutions/2.jpg)
+![helloworld](ARM/Solutions/3.jpg)
 <h3>NiosII</h3>
 <h4>Basics</h4>
 
