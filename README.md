@@ -9,9 +9,10 @@ helloworld:[Program](ARM/Basic/helloworld.c)
 
 Lab1 Part2: [Program](ARM/Solutions/lab1/part2.s)
 ![Lab1 Part2](ARM/Solutions/lab1/part2.jpg)
-![helloworld](ARM/Solutions/1.jpg)
-![helloworld](ARM/Solutions/2.jpg)
-![helloworld](ARM/Solutions/3.jpg)
+Execution with breakpoint at 0x0000002C:
+![Lab1 Part2](ARM/Solutions/lab1/breakpoint1.jpg)
+![Lab1 Part2](ARM/Solutions/lab1/breakpoint2.jpg)
+![Lab1 Part2](ARM/Solutions/lab1/breakpoint3.jpg)
 <h3>NiosII</h3>
 <h4>Basics</h4>
 
@@ -21,3 +22,7 @@ helloworld:[Program](NiosII/Basic/helloworld.c)
 
 Lab1 Part2: [Program](NiosII/Solutions/lab1/part2.s)
 ![Lab1 Part2](NiosII/Solutions/lab1/part2.jpg)
+Execution with breakpoint at 0x0000002C:
+![Lab1 Part2](NiosII/Solutions/lab1/breakpoint1.jpg)
+![Lab1 Part2](NiosII/Solutions/lab1/breakpoint2.jpg)
+![Lab1 Part2](NiosII/Solutions/lab1/breakpoint3.jpg)
